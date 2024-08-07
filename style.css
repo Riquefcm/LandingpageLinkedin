@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  body {
+    background-color: #f3f2ef; /* Cor de fundo */
+    display: flex;             /* Define um contêiner flexível */
+    flex-direction: column;    /* Define a direção do flex como coluna */
+    align-items: center;       /* Alinha os itens ao centro */
+  }
+  /* Define o estilo para imagens dentro de elementos com a classe .header__left */
+.header__left img {
+    object-fit: contain;  /* Assegura que a imagem mantenha sua proporção dentro do contêiner */
+    height: 40px;         /* Define a altura da imagem */
+    margin-right: 10px;   /* Adiciona uma margem à direita da imagem */
+  }
+  
+  
+  /* Define o estilo do cabeçalho */
+  .header {
+    width: 100%;                          /* Largura total */
+    display: flex;                        /* Define um contêiner flexível */
+    position: sticky;                     /* Cabeçalho fixo no topo */
+    top: 0;                               /* Fixa o cabeçalho no topo da página */
+    z-index: 999;                         /* Assegura que o cabeçalho esteja no topo da pilha de empilhamento */
+    justify-content: space-evenly;        /* Espaça uniformemente os itens dentro do cabeçalho */
+    border-bottom: 0.1px solid lightgray; /* Adiciona uma borda inferior cinza clara */
+    padding-top: 10px;                    /* Adiciona padding no topo */
+    padding-bottom: 10px;                 /* Adiciona padding na parte inferior */
+    background-color: white;              /* Define a cor de fundo como branco */
+  }
+  
+  
+  /* Define o estilo para elementos com a classe .header__left */
+  .header__left {
+    display: flex; /* Define um contêiner flexível */
+  }
+  
+  
+  /* Define o estilo para elementos com a classe .header__right */
+  .header__right {
+    display: flex; /* Define um contêiner flexível */
+  }
+  
+  
+  /* Define o estilo para elementos com a classe .header__search */
+  .header__search {
+    padding: 10px;                /* Adiciona padding */
+    display: flex;                /* Define um contêiner flexível */
+    align-items: center;          /* Alinha os itens ao centro */
+    border-radius: 5px;           /* Arredonda os cantos */
+    height: 22px;                 /* Define a altura */
+    color: gray;                  /* Define a cor do texto */
+    background-color: #eef3f8;    /* Define a cor de fundo */
+}
+
+
+/* Remove o estilo padrão dos inputs dentro de .header__search */
+.header__search > input {
+  outline: none;      /* Remove o contorno */
+  border: none;       /* Remove a borda */
+  background: none;   /* Remove o fundo */
+}
+
+
+/* Define o estilo para elementos com a classe .headerOption */
+.headerOption {
+  display: flex;                /* Define um contêiner flexível */
+  flex-direction: column;       /* Define a direção do flex como coluna */
+  align-items: center;          /* Alinha os itens ao centro */
+  margin-right: 20px;           /* Adiciona uma margem à direita */
+  color: gray;                  /* Define a cor do texto */
+  cursor: pointer;              /* Define o cursor como ponteiro */
+}
+
+
+/* Define o estilo ao passar o mouse sobre elementos com a classe .headerOption */
+.headerOption:hover {
+  color: black; /* Muda a cor do texto para preto */
+}
+
+
+/* Define o estilo para os elementos h3 dentro de .headerOption */
+.headerOption h3 {
+  font-size: 12px;       /* Define o tamanho da fonte */
+  margin-top: 10px;      /* Adiciona uma margem ao topo */
+  font-weight: 400;      /* Define o peso da fonte */
+}
+
+
+/* Define o estilo para elementos com a classe .headerOption__icon */
+.headerOption__icon {
+  margin-right: 5px;     /* Adiciona uma margem à direita */
+  height: 20px;          /* Define a altura */
+  width: 20px;           /* Define a largura */
+}
+.body__main {
+    display: flex;               /* Define um contêiner flexível */
+    margin-top: 35px;            /* Adiciona uma margem ao topo */
+    max-width: 1200px;           /* Define a largura máxima */
+    margin-left: 20px;           /* Adiciona uma margem à esquerda */
+    margin-right: 20px;          /* Adiciona uma margem à direita */
+  }
+  
+  
+  /* Sidebar */
+  .sidebar {
+    position: sticky;            /* Torna a barra lateral fixa quando rola */
+    top: 80px;                   /* Define a distância do topo */
+    flex: 0.2;                   /* Define o tamanho flexível */
+    border-radius: 10px;         /* Arredonda os cantos */
+    text-align: center;          /* Centraliza o texto */
+    height: fit-content;         /* Define a altura com base no conteúdo */
+  }
+  
+  
+  /* Estilo para a imagem no topo da sidebar */
+  .sidebar__top > img {
+    margin-bottom: -20px;        /* Adiciona uma margem negativa abaixo */
+    width: 100%;                 /* Define a largura como 100% */
+    height: 60px;                /* Define a altura */
+    border-top-left-radius: 10px;/* Arredonda o canto superior esquerdo */
+    border-top-right-radius: 10px;/* Arredonda o canto superior direito */
+    object-fit: cover;           /* Ajusta a imagem para cobrir o contêiner */
+  }
+  
+  
+  /* Estilo para o contêiner superior da sidebar */
+  .sidebar__top {
+    display: flex;               /* Define um contêiner flexível */
+    flex-direction: column;      /* Direção do flex como coluna */
+  align-items: center;         /* Alinha os itens ao centro */
+  border: 1px solid lightgray; /* Adiciona uma borda cinza clara */
+  border-bottom: 0;            /* Remove a borda inferior */
+  border-top-left-radius: 10px;/* Arredonda o canto superior esquerdo */
+  border-top-right-radius: 10px;/* Arredonda o canto superior direito */
+  background-color: white;     /* Define a cor de fundo como branco */
+  padding-bottom: 10px;        /* Adiciona padding na parte inferior */
+}
+
+
+/* Estilo para o ícone no topo da sidebar */
+.sidebar__topAvatar {
+  font-size: 40px;             /* Define o tamanho da fonte */
+}
+
+
+/* Estilo para a imagem de perfil */
+.profilepic {
+  position: absolute;          /* Define o posicionamento absoluto */
+  top: 40;                     /* Define a posição superior */
+  left: 100;                   /* Define a posição à esquerda */
+  width: 40px;                 /* Define a largura da imagem */
+  height: 40px;                /* Define a altura da imagem */
+  border-radius: 50%;          /* Torna a imagem redonda */
+  object-fit: cover;           /* Ajusta a imagem para cobrir o contêiner */
+}
+
+/* Estilo para a imagem de perfil */
+.profilepic {
+  left: 95px;                   /* Define a posição à esquerda */
+}
+
+/* Estilo para a seção de estatísticas da sidebar */
+.sidebar__stats {
+  padding: 10px;               /* Adiciona padding */
+  margin-bottom: 10px;         /* Adiciona uma margem inferior */
+  border: 1px solid lightgray; /* Adiciona uma borda cinza clara */
+  background-color: white;     /* Define a cor de fundo como branco */
+  border-bottom-left-radius: 10px; /* Arredonda o canto inferior esquerdo */
+  border-bottom-right-radius: 10px;/* Arredonda o canto inferior direito */
+}
+
+
+/* Estilo para os itens de estatísticas na sidebar */
+.sidebar__stat {margin-top: 10px;            /* Adiciona uma margem superior */
+    display: flex;               /* Define um contêiner flexível */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+  }
+  
+  
+  /* Estilo para os parágrafos dentro dos itens de estatísticas */
+  .sidebar__stat > p {
+    color: gray;                 /* Define a cor do texto como cinza */
+    font-size: 13px;             /* Define o tamanho da fonte */
+    font-weight: 600;            /* Define o peso da fonte */
+  }
+  
+  
+  /* Estilo para o número de estatísticas na sidebar */
+  .sidebar__statNumber {
+    font-weight: bold;           /* Define o peso da fonte como negrito */
+    color: #0a66c2 !important;   /* Define a cor do texto */
+  }
+  
+  
+  /* Estilo para o título h4 no topo da sidebar */
+  .sidebar__top > h4 {
+    color: gray;                 /* Define a cor do texto como cinza */
+    font-size: 12px;             /* Define o tamanho da fonte */
+    margin-top: 5px;             /* Adiciona uma margem superior */
+  }
+  
+  
+  /* Estilo para o título h2 no topo da sidebar */
+  .sidebar__top > h2 {
+    font-size: 18px;             /* Define o tamanho da fonte */
+  }
+  
+  
+  /* Estilo para a seção inferior da sidebar */
+  .sidebar__bottom {
+    text-align: left;            /* Alinha o texto à esquerda */
+    padding: 10px;               /* Adiciona padding */
+    border: 1px solid lightgray; /* Adiciona uma borda cinza clara */
+    background-color: white;     /* Define a cor de fundo como branco */
+    border-radius: 10px;         /* Arredonda os cantos */
+    margin-top: 10px;            /* Adiciona uma margem superior */
+  }
+  
+  
+  /* Estilo para os itens recentes na sidebar */
+  .sidebar__recentItem {
+    display: flex;               /* Define um contêiner flexível */
+    font-size: 13px;             /* Define o tamanho da fonte */
+    color: gray;                 /* Define a cor do texto como cinza */
+    font-weight: bolder;         /* Define o peso da fonte como mais grosso */
+    cursor: pointer;             /* Define o cursor como ponteiro */
+    margin-bottom: 5px;          /* Adiciona uma margem inferior */
+    padding: 5px;                /* Adiciona padding */
+  }
+  
+  
+  /* Estilo para os itens recentes na sidebar ao passar o mouse */
+  .sidebar__recentItem:hover {
+    background-color: whitesmoke;/* Define a cor de fundo ao passar o mouse */
+    border-radius: 10px;         /* Arredonda os cantos */
+    cursor: pointer;             /* Define o cursor como ponteiro */
+    color: black;                /* Muda a cor do texto para preto */
+  }
+  
+  
+  /* Estilo para os elementos hash na sidebar */
+  .sidebar__hash {
+    margin-right: 10px;          /* Adiciona uma margem à direita */
+    margin-left: 10px;           /* Adiciona uma margem à esquerda */
+  }
+  
+  
+  /* Estilo para os parágrafos dentro da seção inferior da sidebar */
+  .sidebar__bottom > p {
+    font-size: 14px;             /* Define o tamanho da fonte */
+    padding-bottom: 10px;        /* Adiciona padding na parte inferior */
+  }
+
+  .feed {
+    flex: 0.6;                    /* Define o tamanho flexível do feed */
+    margin: 0 20px;               /* Adiciona margens laterais de 20px */
+  }
+
+
+/* Estilo para o contêiner de entrada do feed */
+.feedinputContainer {
+  background-color: white;      /* Define a cor de fundo como branco */
+  padding: 10px;                /* Adiciona padding */
+  padding-bottom: 20px;         /* Adiciona padding na parte inferior */
+  border-radius: 10px;          /* Arredonda os cantos */
+  margin-bottom: 20px;          /* Adiciona uma margem inferior */
+}
+
+
+/* Estilo para a área de entrada do feed */
+.feedinput {
+  border: 1px solid lightgray;  /* Adiciona uma borda cinza clara */
+  border-radius: 30px;          /* Arredonda os cantos */
+  display: flex;                /* Define um contêiner flexível */
+  padding: 10px;                /* Adiciona padding */
+  color: gray;                  /* Define a cor do texto como cinza */
+  padding-left: 15px;           /* Adiciona padding à esquerda */
+}
+
+
+/* Estilo para o formulário dentro da área de entrada do feed */
+.feedinput > form {
+  display: flex;                /* Define um contêiner flexível */
+  width: 100%;                  /* Define a largura como 100% */
+}
+
+
+/* Estilo para o campo de entrada dentro do formulário */
+.feedinput > form > input {
+  border: none;                 /* Remove a borda */
+  flex: 1;                      /* Define o tamanho flexível */
+  margin-left: 10px;            /* Adiciona uma margem à esquerda */
+  outline-width: 0;             /* Remove a borda do foco */
+  font-weight: 600;             /* Define o peso da fonte */
+}
+
+
+/* Esconde o botão dentro do formulário */
+.feedinput > form > button {
+  display: none;                /* Define o display como nenhum */
+} 
+
+
+/* Estilo para as opções de entrada do feed */
+.feed__inputOptions {
+    display: flex;                /* Define um contêiner flexível */
+    justify-content: space-evenly;/* Espaça uniformemente os itens */
+  }
+  
+  
+  /* Estilo para cada opção de entrada */
+  .inputOption {
+    display: flex;                /* Define um contêiner flexível */
+    align-items: center;          /* Alinha os itens ao centro */
+    margin-top: 15px;             /* Adiciona uma margem ao topo */
+    color: gray;                  /* Define a cor do texto como cinza */
+    padding: 10px;                /* Adiciona padding */
+    cursor: pointer;              /* Define o cursor como ponteiro */
+  }
+  
+  
+  /* Estilo ao passar o mouse sobre cada opção de entrada */
+  .inputOption:hover {
+    background-color: whitesmoke; /* Define a cor de fundo ao passar o mouse */
+    border-radius: 10px;          /* Arredonda os cantos */
+  }
+  
+  
+  /* Estilo para o título h4 dentro de cada opção de entrada */
+  .inputOption > h4 {
+    margin-left: 5px;             /* Adiciona uma margem à esquerda */
+  }
+  
+  .post {
+    background-color: white;      /* Define a cor de fundo como branco */
+    padding: 15px;                /* Adiciona padding */
+    margin-bottom: 10px;          /* Adiciona uma margem inferior */
+    border-radius: 10px;          /* Arredonda os cantos */
+  }
+  
+  
+  /* Estilo para o cabeçalho do post */
+  .post__header {
+    display: flex;                /* Define um contêiner flexível */
+    margin-bottom: 10px;          /* Adiciona uma margem inferior */
+}
+
+
+/* Estilo para a seção de informações do post */
+.post__info {
+  margin-left: 10px;            /* Adiciona uma margem à esquerda */
+}
+
+
+/* Estilo para os parágrafos dentro da seção de informações do post */
+.post__info > p {
+  font-size: 12px;              /* Define o tamanho da fonte */
+  color: gray;                  /* Define a cor do texto como cinza */
+}
+
+
+/* Estilo para os títulos h2 dentro da seção de informações do post */
+.post__info > h2 {
+  font-size: 15px;              /* Define o tamanho da fonte */
+}
+
+.widgets {
+    position: sticky;             /* Torna a seção fixa quando rola a página */
+    top: 80px;                    /* Define a distância do topo */
+    flex: 0.2;                    /* Define o tamanho flexível */
+    background-color: white;      /* Define a cor de fundo como branco */
+    border-radius: 10px;          /* Arredonda os cantos */
+    border: 1px solid lightgray;  /* Adiciona uma borda cinza clara */
+    height: fit-content;          /* Define a altura com base no conteúdo */
+    padding-bottom: 10px;         /* Adiciona padding na parte inferior */
+  }
+  
+  
+  /* Estilo para o cabeçalho dos widgets */
+  .widgets__header {
+    display: flex;                /* Define um contêiner flexível */
+    align-items: center;          /* Alinha os itens ao centro */
+    justify-content: space-between;/* Distribui o espaço entre os itens */
+    padding: 10px;                /* Adiciona padding */
+  }
+  
+  
+  /* Estilo para o título h2 no cabeçalho dos widgets */
+  .widgets__header > h2 {
+    font-size: 16px;              /* Define o tamanho da fonte */
+    font-weight: 400;             /* Define o peso da fonte */
+  }
+  
+  
+  /* Estilo para os artigos dentro dos widgets */
+  .widgets__article {
+    display: flex;                /* Define um contêiner flexível */
+    padding: 10px;                /* Adiciona padding */
+    cursor: pointer;              /* Define o cursor como ponteiro */
+  }
+  
+  
+  /* Estilo ao passar o mouse sobre os artigos */
+  .widgets__article:hover {
+    background-color: whitesmoke; /* Define a cor de fundo ao passar o mouse */
+}
+
+
+/* Estilo para a seção esquerda dos artigos */
+.widgets__articleLeft {
+  color: #0177b7;               /* Define a cor do texto */
+  margin-right: 5px;            /* Adiciona uma margem à direita */
+}
+
+
+/* Estilo para os ícones na seção esquerda dos artigos */
+.widgets__articleLeft .material-icons {
+  font-size: 15px;              /* Define o tamanho da fonte dos ícones */
+}
+
+
+/* Estilo para a seção direita dos artigos */
+.widgets__articleRight {
+  flex: 1;                      /* Define o tamanho flexível */
+}
+
+
+/* Estilo para os títulos h4 na seção direita dos artigos */
+.widgets__articleRight > h4 {
+  font-size: 14px;              /* Define o tamanho da fonte */
+}
+
+
+/* Estilo para os parágrafos na seção direita dos artigos */
+.widgets__articleRight > p {
+  font-size: 12px;              /* Define o tamanho da fonte */
+  color: gray;                  /* Define a cor do texto como cinza */
+}
+  
